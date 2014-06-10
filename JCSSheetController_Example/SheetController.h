@@ -17,8 +17,6 @@ enum {
 
 @interface SheetController : JCSSheetController
 
-@property (nonatomic, copy) NSString *editString;
-
 - (IBAction)okClicked:(id)sender;
 - (IBAction)cancelClicked:(id)sender;
 

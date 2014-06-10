@@ -10,10 +10,9 @@
 
 
 @implementation SheetController
-@synthesize editString;
 
 - (id)init {
-    if (!(self = [super initWithWindowNibName:@"ExampleSheet"])) {
+    if (!(self = [super initWithWindowNibName:@"DeleteConfirmationSheet"])) {
         return nil; // Bail!
     }
     return self;
@@ -41,7 +40,7 @@
 
 - (void)sheetWillDisplay {
     [super sheetWillDisplay];
-    NSLog(@"ExampleSheet will display");
+    NSLog(@"Sheet will display");
 }
 
 @end

@@ -16,14 +16,15 @@
 
 @implementation JCSSheetController
 
-@synthesize handler;
-
-- (void)beginSheetModalForWindow:(NSWindow *)window completionHandler:(JCSCompletionHandler)aHandler {
+- (void)beginSheetModalForWindow:(NSWindow *)window withMessage:(NSString *)message completionHandler:(JCSCompletionHandler)aHandler {
+    self.message = message;
     self.handler = aHandler;
     
     [self sheetWillDisplay];
     
     [NSApp beginSheet:self.window modalForWindow:window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:NULL];
+    
+    [self sheetDidDisplay];
 }
 
 - (void)endSheetWithReturnCode:(NSUInteger)result {
@@ -35,6 +36,11 @@
     // Convenience for subclasses to override.
 }
 
+- (void)sheetDidDisplay {
+    // Convenience for subclasses to override.
+    self.messageLabel.stringValue = self.message;
+}
+
 // Mark: -
 // Mark: Class Extension methods
 
@@ -42,7 +48,7 @@
     [sheet orderOut:self];
     
     if (self.handler) {
-        handler(returnCode);
+        self.handler(returnCode);
     }
 }
 

@@ -15,7 +15,6 @@
 @property (nonatomic, unsafe_unretained) IBOutlet NSWindow *window;
 @property (nonatomic, weak) IBOutlet NSTextField *label;
 @property (nonatomic, weak) IBOutlet NSButton *button;
-@property (nonatomic, copy) NSString *displayString;
 
 - (IBAction)showSheet:(id)sender;
 

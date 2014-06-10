@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD75EA4D194777D8004564C4 /* DeleteConfirmationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD75EA4C194777D8004564C4 /* DeleteConfirmationSheet.xib */; };
 		EE21B406130FD5F100F5B766 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE21B405130FD5F100F5B766 /* Cocoa.framework */; };
 		EE21B410130FD5F100F5B766 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE21B40E130FD5F100F5B766 /* InfoPlist.strings */; };
 		EE21B413130FD5F100F5B766 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE21B412130FD5F100F5B766 /* main.m */; };
@@ -15,10 +16,10 @@
 		EE21B41C130FD5F100F5B766 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE21B41A130FD5F100F5B766 /* MainMenu.xib */; };
 		EE3E4AA11310177900749DEC /* SheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3E4AA01310177900749DEC /* SheetController.m */; };
 		EE86722E130FD8460016C1BF /* JCSSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE86722D130FD8460016C1BF /* JCSSheetController.m */; };
-		EEDC3A0C13102DA1001C46D2 /* ExampleSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEDC3A0B13102DA1001C46D2 /* ExampleSheet.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD75EA4C194777D8004564C4 /* DeleteConfirmationSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteConfirmationSheet.xib; sourceTree = "<group>"; };
 		EE21B401130FD5F100F5B766 /* JCSSheetController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCSSheetController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE21B405130FD5F100F5B766 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EE21B408130FD5F100F5B766 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -36,7 +37,6 @@
 		EE3E4AA01310177900749DEC /* SheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheetController.m; sourceTree = "<group>"; };
 		EE86722C130FD8460016C1BF /* JCSSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCSSheetController.h; sourceTree = SOURCE_ROOT; };
 		EE86722D130FD8460016C1BF /* JCSSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSSheetController.m; sourceTree = SOURCE_ROOT; };
-		EEDC3A0B13102DA1001C46D2 /* ExampleSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleSheet.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +116,8 @@
 		EE86722A130FD8050016C1BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AD75EA4C194777D8004564C4 /* DeleteConfirmationSheet.xib */,
 				EE21B41A130FD5F100F5B766 /* MainMenu.xib */,
-				EEDC3A0B13102DA1001C46D2 /* ExampleSheet.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -183,9 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE21B410130FD5F100F5B766 /* InfoPlist.strings in Resources */,
+				AD75EA4D194777D8004564C4 /* DeleteConfirmationSheet.xib in Resources */,
 				EE21B416130FD5F100F5B766 /* Credits.rtf in Resources */,
 				EE21B41C130FD5F100F5B766 /* MainMenu.xib in Resources */,
-				EEDC3A0C13102DA1001C46D2 /* ExampleSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
